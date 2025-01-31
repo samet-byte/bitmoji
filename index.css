@@ -1,0 +1,134 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    margin-top: 40px;
+    position: relative;
+    max-width: 700px;
+}
+
+h2, h4 {
+    text-align: center;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+p, code, li {
+    color: #666;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    flex: 1;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    margin-left: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #007bff;
+    margin: 30px 0;
+}
+
+a {
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+code {
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.bubble {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #007bff;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: float 6s ease-in-out infinite;
+    bottom: -40px;
+    right: -40px;
+}
+
+.bubble:nth-child(2) {
+    background: #00aaff;
+    width: 80px;
+    height: 80px;
+    bottom: -20px;
+    right: 80px;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(3) {
+    background: #ff4757;
+    width: 100px;
+    height: 100px;
+    bottom: 100px;
+    right: -50px;
+    animation-duration: 7s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
